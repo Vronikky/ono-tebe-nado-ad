@@ -21,6 +21,7 @@
 .header__links-list {
     display: flex;
     gap: 32px;
+    justify-self: center;
 }
 .header__links-list-item {
     list-style: circle;
@@ -42,19 +43,16 @@
 .header__logo {
     display: block;
     justify-self: center;
-    align-self: center;
+    /* align-self: center; */
     width: 140px;
 }
 .header__logo-image {
     width:100%;
 }
-.address {
-    font-style: inherit;
-}
 .header__address {
     display: block;
     font-style: inherit;
-    justify-self: end;
+    justify-self: center;
     line-height: 24px;
 }
 .address-item {
@@ -62,6 +60,7 @@
     font-size: 18px;
     line-height: 1.35;
     text-underline-position: under;
+    text-underline-offset: 3px;
     font-style: normal;
 }
 .address-text {
@@ -117,7 +116,7 @@
     letter-spacing: 60px;
 }
 .remove-spacing {
-    letter-spacing: 0;
+    letter-spacing: normal;
 }
 .cover__description {
     position: relative;
@@ -154,7 +153,7 @@
     background-color: #FFF;
 }
 .lots-section {
-    margin-top:180px;
+    margin-top: 120px;
     padding: 50px 0 0;
 }
 .lots__head {
@@ -193,8 +192,6 @@
     z-index: 1;
     justify-content: space-between;
     gap: 30px;
-    /* height: 596px;
-    width: 334px; */
     height:100%;
     padding: 48px 40px;
     background-position: center;
@@ -250,6 +247,7 @@
     font-weight: 400;
     gap: 25px;
     margin-top: 120px;
+    padding:  34px 24px 0;
 }
 .about__column {
     justify-self: center;
@@ -264,15 +262,12 @@
     justify-self: center;
     width: 240px;
     height: 240px;
-    /* padding: 35px 47px; */
     border-radius: 50%;
     background-color: black;
 }
 .about__logo-image {
     width: 148px;
-    /* height: 114px; */
-    /* padding-top:35px; 
-    padding-left: 47px; */
+    height: 114px;
 }
 .about__title {
     padding-top: 100px;
@@ -285,7 +280,7 @@
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    padding-top:76px;
+    padding-top: 150px;
     padding-bottom: 25px;
     font-family: 'Raleway' sans-serif;
     font-weight: 400;
@@ -293,24 +288,36 @@
     gap: 25px;
     font-size: 20px;
 } 
+.text_one {
+    margin-right: 29px;
+}
+.text_two {
+    margin-right: 24px;
+}
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding-top: 180px;
+    height: 180px;
+    margin-top:180px;
     gap: 140px;
 }
 .address {
     display: block;
     justify-self: center;
+    align-self: start;
     font-size: 18px;
 }
 .footer_address-text {
-    text-align: start;
+    font-size: 18px;
+    font-style: normal;
 }
 .footer__menu {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    align-self: start;
+    padding-top:1px;
 }
 .footer__menu-list {
     text-align: center;
@@ -330,7 +337,8 @@
     display: flex;
     list-style: none;
     column-gap: 48px;
-    justify-self: end;
+    justify-self: center;
+    align-self: start;
     padding-top: 2px;
     padding-left: 2px;
 }
