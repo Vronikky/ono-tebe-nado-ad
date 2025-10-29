@@ -13,6 +13,7 @@ main {
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     padding: 92px 24px;
+    height: 293px;
 }
 .header__menu {
     text-underline-position: under;
@@ -42,7 +43,7 @@ main {
     display: block;
     justify-self: center;
     align-self: center;
-    width: 148px;
+    width: 140px;
 }
 .header__logo-image {
     width:100%;
@@ -123,7 +124,7 @@ main {
     justify-content: flex-end;
     align-items: center;
     gap:78px;
-    padding: 136px 0 0;
+    padding: 0 50px 55px 78px;
 }
 .cover__description-text {
     color: #FFF;
@@ -150,6 +151,7 @@ main {
     background-color: #FFF;
 }
 .lots-section {
+    margin-top:180px;
     padding: 50px 0 0;
 }
 .lots__head {
@@ -215,7 +217,7 @@ main {
     text-transform: uppercase;
 }
 .card__text {
-    /* position: relative; */
+    position: relative;
     z-index: 1;
     color:#FFF;
     font-size: 20px;
@@ -226,7 +228,6 @@ main {
 .lots__look-more-link {
     display: block;
     margin-left: 64px;
-    /* padding-left: 40px; */
     padding-top: 30px;
     font-size: 20px;
     text-decoration: underline;
@@ -234,13 +235,11 @@ main {
     text-underline-offset: 3px;
 }
 .about {
+    margin-top: 175px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* margin-right:24px;
-    margin-left: 24px; */
     font-size: 20px;
     font-weight: 400;
-    /* padding: 34px 24px 0; */
     gap: 25px;
 }
 .about__column {
@@ -279,19 +278,22 @@ main {
     font-weight: 400;
     line-height: 24px;
     gap: 25px;
-    font-size: 20px; 
-}
+    font-size: 20px;
+} 
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: flex-start;
-    /* height:180px; */
+    align-items: center;
     padding-top: 180px;
-    /* padding: 180px 50px 88px; */
     gap: 140px;
 }
+.address {
+    display: block;
+    justify-self: center;
+    font-size: 18px;
+}
 .footer_address-text {
-    font-style: normal;
+    text-align: start;
 }
 .footer__menu {
     display: flex;
@@ -313,6 +315,7 @@ main {
 }
 .footer__social-list {
     display: flex;
+    list-style: none;
     column-gap: 48px;
     justify-self: end;
     padding-top: 2px;
