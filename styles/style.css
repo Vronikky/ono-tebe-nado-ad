@@ -44,6 +44,7 @@
     font-style: inherit;
     justify-self: end;
     line-height: 24px;
+    max-width: 240px;
 }
 .address-item {
     display: block;
@@ -83,28 +84,29 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     color:#FFF;
     font-weight: bold;
     font-size: 100px;
     line-height: 1.15;
-    letter-spacing: 30px;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
 }
 .algined-text {
     display: block;
 }
 .algined-text-center {
-    line-height: 1;
+    /* line-height: 1; */
     text-align: center;
+    padding-block: 20px;
 }
 .algined-text-right {
-    line-height: 1;
+    /* line-height: 1; */
     text-align: right;
 }
-.spacing-text {
+/* .spacing-text {
     letter-spacing: 30px;
-}
+} */
 .remove-spacing {
     letter-spacing: normal;
 }
@@ -132,7 +134,7 @@
     font-style: bold;
     color:#FFF;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 22px;
     line-height: 1;
     background-color: transparent;
@@ -220,7 +222,6 @@
 }
 .lots__look-more-link {
     display: block;
-    /* margin-left: 64px; */
     padding-top: 30px;
     padding-left: 40px;
     font-size: 20px;
@@ -235,7 +236,7 @@
     padding: 120px 24px 0;
 }
 .about__column {
-    justify-self: start;
+    align-items: center;
 }
 .about__column-text {
     grid-column: 2/4;
@@ -267,7 +268,7 @@
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 25px;
     font-family: 'Raleway' sans-serif;
     font-weight: 400;
@@ -290,6 +291,7 @@
 .address {
     justify-self: start;
     font-size: 18px;
+    align-self: start;
 }
 .footer_address-text {
     font-size: 18px;
@@ -299,6 +301,7 @@
     display: flex;
     flex-direction: column;
     padding-top:1px;
+    align-self: start;
 }
 .footer__menu-list {
     text-align: center;
@@ -319,6 +322,7 @@
     list-style: none;
     column-gap: 48px;
     justify-content: end;
+    align-self: start;
 }
 .footer__social-list-item {
     list-style: none;
