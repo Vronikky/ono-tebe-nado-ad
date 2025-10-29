@@ -1,13 +1,4 @@
 /* место для вашего кода */
-/* main {
-    display: flex;
-    flex-direction: column;
-    gap: 183px;
-}
-.content-section {
-    width: 1100px;
-    margin: auto;
-} */
 .header {
     display:grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -51,7 +42,7 @@
 .header__address {
     display: block;
     font-style: inherit;
-    justify-self: center;
+    justify-self: end;
     line-height: 24px;
 }
 .address-item {
@@ -89,8 +80,8 @@
 }
 .cover__title {
     position: relative;
-    display: flex;
     z-index: 1;
+    display: flex;
     flex-direction: column;
     gap: 20px;
     color:#FFF;
@@ -111,18 +102,18 @@
     line-height: 1;
     text-align: right;
 }
-.letter-text {
+.spacing-text {
     letter-spacing: 30px;
 }
 .remove-spacing {
-    letter-spacing: 0px;
+    letter-spacing: normal;
 }
 .cover__description {
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    align-content: center;
     gap:78px;
     padding: 136px 0 0;
 }
@@ -133,6 +124,7 @@
     font-weight: 400;
     text-transform: uppercase;
     word-spacing: 18px;
+    padding: 12px 0 11px;    
 }
 .bet-button {
     padding: 12px 32px 11px 31px;
@@ -152,13 +144,12 @@
     background-color: #FFF;
 }
 .lots-section {
-    margin-top: 180px;
-    /* padding: 180px 0 0; */
+    padding: 180px 24px 0;
 }
 .lots__head {
-    padding-left: 40px;
-    padding-bottom: 27px;
+    padding: 0 0 27px 40px;
     font-weight: bold;
+    font-weight: 700;
     font-size: 40px;
     line-height: 1;
     text-transform: uppercase;
@@ -169,6 +160,7 @@
     gap: 25px;
     list-style: none;
     margin: 0 auto;
+    padding-bottom: 30px;
     margin-left: 24px;
     margin-right: 24px;
     padding: 0;
@@ -241,11 +233,8 @@
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 20px;
-    font-weight: 400;
     gap: 25px;
-    margin-top: 120px;
-    padding:  34px 24px 0;
+    padding: 120px 24px 0;
 }
 .about__column {
     justify-self: start;
@@ -271,7 +260,6 @@
 }
 .about__title {
     padding-top: 136px;
-    /* padding-bottom: 100px; */
     font-weight: bold;
     font-size: 40px;
     line-height: 1;
@@ -333,8 +321,6 @@
     list-style: none;
     column-gap: 48px;
     justify-content: end;
-    padding-top: 2px;
-    padding-left: 2px;
 }
 .footer__social-list-item {
     list-style: none;
